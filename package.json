@@ -1,31 +1,29 @@
 {
-  "name": "hapipal-boilerplate",
-  "version": "3.0.0",
-  "main": "lib/index.js",
+  "name": "hapipal-boilerplate-vue",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/Hoppy1982/hapipal-boilerplate-vue#readme",
+  "bugs": {
+    "url": "https://github.com/Hoppy1982/hapipal-boilerplate-vue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoppy1982/hapipal-boilerplate-vue.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "node server",
-    "test": "lab -a @hapi/code -L",
-    "lint": "eslint ."
+    "start": "npm run start --workspaces api"
   },
-  "dependencies": {
-    "@hapi/boom": "9.x.x",
-    "@hapipal/haute-couture": "4.x.x",
-    "joi": "17.x.x"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@hapi/code": "8.x.x",
-    "@hapi/eslint-config-hapi": "13.x.x",
-    "@hapi/eslint-plugin-hapi": "4.x.x",
-    "@hapi/glue": "8.x.x",
-    "@hapi/hapi": "20.x.x",
-    "@hapi/lab": "24.x.x",
-    "@hapipal/confidence": "6.x.x",
-    "@hapipal/hpal": "3.x.x",
-    "@hapipal/hpal-debug": "2.x.x",
-    "@hapipal/toys": "3.x.x",
-    "babel-eslint": "10.x.x",
-    "dotenv": "8.x.x",
-    "eslint": "7.x.x",
-    "exiting": "6.x.x"
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0"
   }
 }
