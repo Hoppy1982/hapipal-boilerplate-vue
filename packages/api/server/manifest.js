@@ -1,5 +1,6 @@
 'use strict';
 
+const path = require('path');
 const Dotenv = require('dotenv');
 const Confidence = require('@hapipal/confidence');
 const Toys = require('@hapipal/toys');
@@ -15,6 +16,11 @@ module.exports = new Confidence.Store({
       $param: 'PORT',
       $coerce: 'number',
       $default: 3000,
+    },
+    routes: {
+      files: {
+        relativeTo: path.join(__dirname, '../public/'),
+      },
     },
     debug: {
       $filter: 'NODE_ENV',

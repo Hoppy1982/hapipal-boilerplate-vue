@@ -5,7 +5,7 @@ module.exports = {
   path: '/public/{p*}',
   handler: {
     directory: {
-      path: 'public',
+      path: '.',
     },
   },
 };
